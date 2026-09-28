@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>RoomBook - Rooms</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>RoomBook</h1>
+
+    <p>Meeting Rooms</p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="add-rooms.html">Add Room</a>
+
+    <a href="rooms.html">View Rooms</a>
+
+</nav>
+
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Available Rooms</h2>
+
+        <button onclick="loadRooms()">
+            Refresh Rooms
+        </button>
+
+        <div id="rooms"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    loadRooms();
+
+</script>
+
+</body>
+
+</html>

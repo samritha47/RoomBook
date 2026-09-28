@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>RoomBook - Add Room</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>RoomBook</h1>
+
+    <p>Add Meeting Room</p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="add-rooms.html">Add Room</a>
+
+    <a href="rooms.html">View Rooms</a>
+
+</nav>
+
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Add Room</h2>
+
+        <input
+            id="roomName"
+            type="text"
+            placeholder="Room Name"
+        >
+
+        <input
+            id="roomCapacity"
+            type="number"
+            placeholder="Capacity"
+        >
+
+        <br>
+
+        <label>
+
+            <input
+                id="projector"
+                type="checkbox"
+            >
+
+            Projector
+
+        </label>
+
+
+        <label>
+
+            <input
+                id="whiteboard"
+                type="checkbox"
+            >
+
+            Whiteboard
+
+        </label>
+
+
+        <label>
+
+            <input
+                id="active"
+                type="checkbox"
+                checked
+            >
+
+            Active
+
+        </label>
+
+        <br>
+
+        <button onclick="addRoom()">
+            Add Room
+        </button>
+
+        <div
+            id="message"
+            class="message">
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
